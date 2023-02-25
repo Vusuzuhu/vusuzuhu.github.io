@@ -9,6 +9,7 @@
             <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>    
             <script src="https://unpkg.com/super-hands@3.0.0/dist/super-hands.min.js"></script>
             <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
         </head>    
     </head>    
     <body>
@@ -24,7 +25,9 @@
             <a-entity oculus-touch-controls="hand:right" model:true mixin="controller"></a-entity>
             <a-camera position="0 0.3 0"></a-camera>
             <!--City GLTF model-->
-            <a-entity gltf-model="#city" rotation="0 -90 0" scale="0.0005 0.0005 0.0005" position="0 0 0"></a-entity>
+            <a-entity gltf-model="#city" rotation="0 -90 0" scale="0.0005 0.0005 0.0005" position="0.07 1 -0.5"></a-entity>
+            <!--Dragon GLTF model-->
+            <a-entity gltf-model="#dragon" scale="1 1 1" animation-mixer position="0.5 1.02 -0.7" rotation="0 270 0"></a-entity>
         </a-scene>
     </body>   
 </html>
